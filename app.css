@@ -1,3 +1,15 @@
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
 /*
   Select the h1 element, make its text
   white and the background behind it green
