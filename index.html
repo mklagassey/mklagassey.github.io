@@ -40,7 +40,31 @@
     <div class="red">
     <h3><strong>----My role model----</strong></h3>
     </div>
-    <p><img src="https://codinginfinite.com/wp-content/uploads/2019/05/maxresdefault-1.jpg"</img></p>
+      <button class="accordion">Click to reveal a true genius</button>
+        <div class="panel">
+        <p><img src="https://codinginfinite.com/wp-content/uploads/2019/05/maxresdefault-1.jpg"</img></p>
+        </div>
+
+        <script> /* Animates the accordion */
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
+
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }
+        </script>
     <script>
     function myFunction() {
       var element = document.body;
