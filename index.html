@@ -9,26 +9,32 @@
 
   <body> <!-- Where all the content goes -->
 
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
-  </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+      <A onclick="darkMode()">Dark mode</a>
+    </div>
 
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+    <!-- Where all the stuff to push to the right goes -->
     <div id="main">
-    <button onclick="myFunction()">Toggle dark mode</button>
+    <h1><em>Hello World!</em></h1>
     <p></p>
     <input type="button" class="enjoy-move" value="Touch me" />
     <p></p>
     <input type="button" class="enjoy-css" value="Click me" />
     <p></p>
     <input type="button" class="fuzzybut" value="😊" />
-    <h1><em>Hello World!</em></h1>
+
     <p><strong>"So far, so good. At least I don't have to compile anything and then decipher cryptic error messages."</strong></p>
+
     <!-- How we add a link to text -->
     <p><a href="https://github.com/mklagassey">- Mick LaGassey<a/></p>
+
     <h2>Top 4 Favorite Movies:</h2>
     <ol>
       <li><input type="button" value="Mad Max: Fury Road" /></li>
@@ -36,6 +42,7 @@
       <li>The Princess Bride</li>
       <li>Pulp Fiction</li>
     </ol>
+
     <h3><strong>----Parental Units----</strong></h3>
     <table>
     	<tr>
@@ -47,6 +54,7 @@
     		<td>LaGassey</td>
     	</tr>
     </table>
+    
     <div class="red">
     <h3><strong>----My role model----</strong></h3>
     </div>
@@ -54,12 +62,11 @@
         <div class="panel">
         <p><img src="https://codinginfinite.com/wp-content/uploads/2019/05/maxresdefault-1.jpg"</img></p>
         </div>
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
     </div>
 
     <!-- Handles dark mode -->
     <script>
-      function myFunction() {
+      function darkMode() {
         var element = document.body;
         element.classList.toggle("dark-mode");
       }
